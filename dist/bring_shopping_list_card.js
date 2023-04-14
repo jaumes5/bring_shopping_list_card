@@ -68,18 +68,20 @@ class BringShoppingList extends LitElement {
                       max-height: 100%;" 
                 src="https://web.getbring.com/assets/images/items/${item.image}.png">
         </div>
-        <label style="display: block;
-                      text-align: center;
-                      color: #FFF;
-                      font-size: 0.8em;
-                      cursor: pointer;"
-        >${item.name}</label>
-        <label style="display: block;
-                      text-align: center;
-                      color: #FFF;
-                      font-size: 0.8em;
-                      cursor: pointer;"
-        >${item.specification || html`&nbsp;`}</label>  
+        <div style="width: 100%;height: 100%;">
+          <label style="display: block;
+                        text-align: center;
+                        color: #FFF;
+                        font-size: 0.8em;
+                        cursor: pointer;"
+          >${item.name}</label>
+          <label style="display: block;
+                        text-align: center;
+                        color: #FFF;
+                        font-size: 0.8em;
+                        cursor: pointer;"
+          >${item.specification || html`&nbsp;`}</label>
+        </div>
     </paper-button>
     `
   }
